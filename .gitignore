@@ -4,3 +4,7 @@ trash/
 round2/
 dataset/
 __pycache__/
+*.h5
+*.ptl
+*.pth
+*.pt1
