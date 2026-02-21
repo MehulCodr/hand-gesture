@@ -2,9 +2,10 @@
 .vscode/
 trash/
 round2/
-dataset/
+*dataset*
 __pycache__/
 *.h5
-*.ptl
 *.pth
 *.pt1
+*.ptl
+

@@ -1,0 +1,1079 @@
+2025-01-23 20:00:42.332 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-23 20:00:42.335 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-23 20:00:42.335 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-23 20:00:42.336 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-23 20:00:42.337 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-23 20:00:42.345 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-23 20:00:42.481 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 12)
+2025-01-23 20:00:42.481 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-23 20:00:42.713 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1921
+2025-01-23 20:00:42.841 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-23 20:00:42.844 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:00:42.846 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-23 20:00:42.848 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-23 20:00:42.849 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-23 20:00:42.993 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:00:42.994 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2025-01-23 20:00:42.994 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-01-23 20:00:43.321 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-23 20:00:43.620 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:43.630 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-23 20:00:43.632 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-23 20:00:43.632 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-23 20:00:43.632 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-23 20:00:43.633 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-23 20:00:43.633 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:00:43.633 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:00:44.222 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:00:44.622 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:45.536 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:00:45.536 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:00:45.536 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:00:45.537 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:00:45.628 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:46.719 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:46.720 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:00:46.721 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:00:46.728 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:00:46.729 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:00:46.730 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:00:46.811 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:00:47.723 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:47.730 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.28
+2025-01-23 20:00:48.513 - RealTimeSTT: root - DEBUG - Final text detected with main model: Hello.
+2025-01-23 20:00:48.515 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.79 seconds
+2025-01-23 20:00:48.516 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:00:48.516 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:00:48.517 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:00:48.814 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:49.903 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:50.086 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:00:50.086 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:00:50.086 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:00:50.086 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:00:50.909 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:51.998 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:52.181 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:00:52.182 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:00:52.278 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:00:52.279 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:00:52.279 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:00:52.364 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:00:53.088 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:53.254 - RealTimeSTT: faster_whisper - INFO - Detected language 'hi' with probability 0.43
+2025-01-23 20:00:54.148 - RealTimeSTT: root - DEBUG - Final text detected with main model: Damn, bye, sir.
+2025-01-23 20:00:54.155 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.88 seconds
+2025-01-23 20:00:54.156 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:00:54.156 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:00:54.157 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:00:54.182 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:54.359 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:00:54.359 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:00:54.359 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:00:54.360 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:00:55.271 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:56.272 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:57.362 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:58.369 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:00:59.456 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:00.545 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:01.635 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:02.003 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:02.011 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:02.019 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:02.020 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:02.032 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:02.097 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:02.642 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:02.906 - RealTimeSTT: faster_whisper - INFO - Detected language 'hi' with probability 0.74
+2025-01-23 20:01:03.695 - RealTimeSTT: root - DEBUG - Final text detected with main model: Audio recognition voila!
+2025-01-23 20:01:03.700 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.68 seconds
+2025-01-23 20:01:03.701 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:03.701 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:03.702 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:03.729 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:04.819 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:05.829 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:06.912 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:07.821 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:01:07.821 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:01:07.821 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:01:07.821 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:01:07.912 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:08.919 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:10.008 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:10.732 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:10.732 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:10.775 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:10.776 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:10.790 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:10.823 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:11.096 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:11.580 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.48
+2025-01-23 20:01:12.186 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:12.522 - RealTimeSTT: root - DEBUG - Final text detected with main model: Why is Trump a chudya kind of person?
+2025-01-23 20:01:12.524 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.75 seconds
+2025-01-23 20:01:12.525 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:12.525 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:12.526 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:12.644 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:01:12.644 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:01:12.644 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:01:12.644 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:01:13.192 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:14.280 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:15.369 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:16.374 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:16.824 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:16.825 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:16.895 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:16.896 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:16.897 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:16.916 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:17.374 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:17.705 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.44
+2025-01-23 20:01:18.462 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:18.691 - RealTimeSTT: root - DEBUG - Final text detected with main model: Do you agree to Trump which choose a kind of person?
+2025-01-23 20:01:18.694 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.80 seconds
+2025-01-23 20:01:18.694 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:18.694 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:18.695 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:18.828 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:01:18.828 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:01:18.828 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:01:18.829 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:01:19.468 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:20.556 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:21.648 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:22.735 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:22.736 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:22.736 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:22.762 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:22.763 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:22.765 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:22.829 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:23.592 - RealTimeSTT: faster_whisper - INFO - Detected language 'hi' with probability 0.30
+2025-01-23 20:01:23.740 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:24.600 - RealTimeSTT: root - DEBUG - Final text detected with main model: So we are a chudiya kind of person.
+2025-01-23 20:01:24.602 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.84 seconds
+2025-01-23 20:01:24.603 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:24.603 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:24.604 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:24.830 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:25.104 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:01:25.104 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:01:25.104 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:01:25.105 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:01:25.919 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:26.924 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:28.013 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:29.102 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:29.377 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:29.378 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:29.422 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:29.423 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:29.436 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:29.473 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:30.192 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:30.430 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.60
+2025-01-23 20:01:31.186 - RealTimeSTT: root - DEBUG - Final text detected with main model: Nice.
+2025-01-23 20:01:31.189 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.77 seconds
+2025-01-23 20:01:31.195 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:31.196 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:31.198 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:31.202 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:32.286 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:33.376 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:34.380 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:35.390 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:36.471 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:36.472 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:01:36.474 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:01:36.474 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:01:36.476 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:01:37.473 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:38.290 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:38.291 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:38.340 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:38.342 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:38.343 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:38.382 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:38.560 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:39.650 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:40.741 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:40.886 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.75
+2025-01-23 20:01:41.747 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:42.836 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:43.792 - RealTimeSTT: root - DEBUG - Final text detected with main model: It was better than a great stuff.
+2025-01-23 20:01:43.795 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 5.45 seconds
+2025-01-23 20:01:43.798 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:43.798 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:43.801 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:43.925 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:44.929 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:46.019 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:47.109 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:48.200 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:49.205 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:50.294 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:51.384 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:52.024 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:01:52.025 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:01:52.025 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:01:52.025 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:01:52.391 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:53.481 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:53.940 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:01:53.940 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:01:53.977 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:01:53.978 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:01:53.979 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:01:54.033 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:01:54.570 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:55.089 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.28
+2025-01-23 20:01:55.092 - RealTimeSTT: root - DEBUG - Final text detected with main model: 
+2025-01-23 20:01:55.096 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.12 seconds
+2025-01-23 20:01:55.096 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:01:55.097 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:01:55.099 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:01:55.659 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:56.665 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:57.754 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:58.842 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:01:59.847 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:00.937 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:02.025 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:03.029 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:04.029 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:04.662 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:02:04.662 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:02:04.662 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:02:04.663 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:02:05.119 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:06.208 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:06.940 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:02:06.941 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:02:06.978 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:02:06.979 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:02:06.979 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:02:07.031 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:02:07.216 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:08.043 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.61
+2025-01-23 20:02:08.303 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:09.075 - RealTimeSTT: root - DEBUG - Final text detected with main model: In bold, genuine AI.
+2025-01-23 20:02:09.077 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 2.10 seconds
+2025-01-23 20:02:09.078 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:02:09.079 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:02:09.080 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:02:09.390 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:10.394 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:11.395 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:12.485 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:13.489 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:14.579 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:15.668 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:16.758 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:17.763 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:18.396 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:02:18.396 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:02:18.396 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:02:18.396 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:02:18.851 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:19.942 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:20.948 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:22.038 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:23.126 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:24.215 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:25.221 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:26.310 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:26.585 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:02:26.586 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:02:26.654 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:02:26.655 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:02:26.667 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:02:26.676 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:02:27.399 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:27.624 - RealTimeSTT: faster_whisper - INFO - Detected language 'te' with probability 0.53
+2025-01-23 20:02:28.406 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:28.596 - RealTimeSTT: root - DEBUG - Final text detected with main model: 1-5-5-5-5-5
+2025-01-23 20:02:28.600 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.95 seconds
+2025-01-23 20:02:28.601 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:02:28.601 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:02:28.601 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:02:28.854 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:02:28.854 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:02:28.855 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:02:28.855 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:02:29.493 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:30.582 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:02:30.893 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-23 20:02:30.893 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-23 20:02:30.897 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-23 20:02:30.899 - RealTimeSTT: root - DEBUG - Receive from stdout pipe
+2025-01-23 20:02:30.951 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-23 20:02:30.951 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-23 20:02:31.087 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
+2025-01-23 20:04:39.551 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-23 20:04:39.553 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-23 20:04:39.553 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-23 20:04:39.554 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-23 20:04:39.554 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-23 20:04:39.557 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-23 20:04:39.700 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-23 20:04:39.701 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:04:39.702 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-23 20:04:39.703 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-23 20:04:39.704 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-23 20:04:39.762 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:04:39.763 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2025-01-23 20:04:39.763 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-01-23 20:04:39.960 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-23 20:04:39.961 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-23 20:04:39.961 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-23 20:04:39.963 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 13)
+2025-01-23 20:04:39.963 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-23 20:04:39.976 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1921
+2025-01-23 20:04:40.389 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-23 20:04:40.389 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-23 20:04:40.391 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-23 20:04:40.391 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:04:40.391 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:04:40.392 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:04:41.054 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:41.879 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:04:41.879 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:04:41.879 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:04:41.880 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:04:42.061 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:43.067 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:43.068 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:04:43.069 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:04:43.101 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:04:43.102 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:04:43.103 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:04:43.159 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:04:43.986 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.20
+2025-01-23 20:04:44.155 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:44.660 - RealTimeSTT: root - DEBUG - Final text detected with main model: Hello.
+2025-01-23 20:04:44.663 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.56 seconds
+2025-01-23 20:04:44.665 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:04:44.665 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:04:44.666 - RealTimeSTT: google.auth._default - DEBUG - Checking None for explicit credentials as part of auth process...
+2025-01-23 20:04:44.669 - RealTimeSTT: google.auth._default - DEBUG - Checking Cloud SDK credentials as part of auth process...
+2025-01-23 20:04:44.670 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:04:44.670 - RealTimeSTT: google.auth._default - DEBUG - Cloud SDK credentials not found on disk; not using them
+2025-01-23 20:04:44.673 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:45.163 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:46.250 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:47.065 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:04:47.065 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:04:47.065 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:04:47.066 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:04:47.340 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:47.677 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-01-23 20:04:48.254 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:04:48.254 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:04:48.260 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:04:48.261 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:04:48.262 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:04:48.346 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:48.348 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:04:48.690 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:49.122 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.41
+2025-01-23 20:04:49.435 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:49.817 - RealTimeSTT: root - DEBUG - Final text detected with main model: Duffat
+2025-01-23 20:04:49.819 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.56 seconds
+2025-01-23 20:04:49.823 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:04:49.824 - RealTimeSTT: google.auth._default - DEBUG - Checking None for explicit credentials as part of auth process...
+2025-01-23 20:04:49.824 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:04:49.824 - RealTimeSTT: google.auth._default - DEBUG - Checking Cloud SDK credentials as part of auth process...
+2025-01-23 20:04:49.825 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:04:49.826 - RealTimeSTT: google.auth._default - DEBUG - Cloud SDK credentials not found on disk; not using them
+2025-01-23 20:04:49.826 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:50.523 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:51.611 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:51.693 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-01-23 20:04:51.741 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 113] No route to host
+2025-01-23 20:04:52.615 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:52.841 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:53.616 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:53.706 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:04:53.707 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:04:53.707 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:04:53.707 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:04:53.813 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:54.704 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:55.708 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:55.844 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-01-23 20:04:55.901 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 113] No route to host
+2025-01-23 20:04:55.901 - RealTimeSTT: google.auth._default - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-01-23 20:04:56.616 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:04:56.617 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:04:56.647 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:04:56.648 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:04:56.649 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:04:56.708 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:04:56.800 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:57.451 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.71
+2025-01-23 20:04:57.888 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:57.915 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:58.411 - RealTimeSTT: root - DEBUG - Final text detected with main model: Compute Indian metadata server unavariable
+2025-01-23 20:04:58.414 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.77 seconds
+2025-01-23 20:04:58.415 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:04:58.415 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:04:58.416 - RealTimeSTT: google.auth._default - DEBUG - Checking None for explicit credentials as part of auth process...
+2025-01-23 20:04:58.417 - RealTimeSTT: google.auth._default - DEBUG - Checking Cloud SDK credentials as part of auth process...
+2025-01-23 20:04:58.417 - RealTimeSTT: google.auth._default - DEBUG - Cloud SDK credentials not found on disk; not using them
+2025-01-23 20:04:58.417 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:04:58.418 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:04:58.894 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:04:58.985 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:04:58.986 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:04:58.986 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:04:58.986 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:04:59.983 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:00.166 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:05:00.167 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:05:00.173 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:05:00.174 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:05:00.174 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:05:00.258 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:05:00.919 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-01-23 20:05:00.920 - RealTimeSTT: google.auth._default - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-01-23 20:05:00.946 - RealTimeSTT: faster_whisper - INFO - Detected language 'zh' with probability 0.39
+2025-01-23 20:05:01.021 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 113] No route to host
+2025-01-23 20:05:01.071 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:01.632 - RealTimeSTT: root - DEBUG - Final text detected with main model: 不死了
+2025-01-23 20:05:01.633 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.46 seconds
+2025-01-23 20:05:01.634 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:05:01.634 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:05:01.635 - RealTimeSTT: google.auth._default - DEBUG - Checking None for explicit credentials as part of auth process...
+2025-01-23 20:05:01.635 - RealTimeSTT: google.auth._default - DEBUG - Checking Cloud SDK credentials as part of auth process...
+2025-01-23 20:05:01.636 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:05:01.636 - RealTimeSTT: google.auth._default - DEBUG - Cloud SDK credentials not found on disk; not using them
+2025-01-23 20:05:01.636 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:05:01.994 - RealTimeSTT: google.auth.transport._http_client - DEBUG - Making request: GET http://169.254.169.254
+2025-01-23 20:05:02.160 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:02.803 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:05:02.803 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:05:02.803 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:05:02.803 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:05:02.836 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-23 20:05:02.836 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-23 20:05:02.845 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-23 20:05:02.897 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-23 20:05:02.964 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-23 20:05:03.108 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
+2025-01-23 20:05:04.640 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-01-23 20:05:04.733 - RealTimeSTT: google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 113] No route to host
+2025-01-23 20:05:45.033 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-23 20:05:45.035 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-23 20:05:45.035 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-23 20:05:45.036 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-23 20:05:45.036 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-23 20:05:45.041 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-23 20:05:45.181 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-23 20:05:45.183 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:05:45.184 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-23 20:05:45.185 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-23 20:05:45.185 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-23 20:05:45.248 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:05:45.248 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2025-01-23 20:05:45.249 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-01-23 20:05:45.459 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-23 20:05:45.460 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-23 20:05:45.460 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-23 20:05:45.462 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 13)
+2025-01-23 20:05:45.462 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-23 20:05:45.921 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1921
+2025-01-23 20:05:46.339 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-23 20:05:46.340 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-23 20:05:46.341 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-23 20:05:46.341 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:05:46.341 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:05:46.342 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:05:46.552 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:47.559 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:47.560 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:05:47.560 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:05:47.560 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:05:47.561 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:05:48.565 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:48.749 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:05:48.749 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:05:48.801 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:05:48.802 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:05:48.803 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:05:48.840 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:05:49.604 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.56
+2025-01-23 20:05:49.655 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:50.283 - RealTimeSTT: root - DEBUG - Final text detected with main model: Hello.
+2025-01-23 20:05:50.285 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.48 seconds
+2025-01-23 20:05:50.289 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:05:50.289 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:05:50.295 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:05:50.661 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:51.749 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:52.839 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:53.842 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:54.842 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:55.930 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:56.935 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:58.027 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:05:59.116 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:00.205 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:00.297 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:06:00.297 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:06:00.297 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:06:00.297 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:06:01.211 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:02.299 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:02.300 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:06:02.305 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:06:02.402 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:06:02.403 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:06:02.404 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:06:02.483 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:06:03.210 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.37
+2025-01-23 20:06:03.389 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:03.906 - RealTimeSTT: root - DEBUG - Final text detected with main model: Yeah.
+2025-01-23 20:06:03.908 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.51 seconds
+2025-01-23 20:06:03.909 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:06:03.910 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:06:03.912 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:06:04.397 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:05.484 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:06.573 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:07.663 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:08.667 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:09.758 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:06:10.133 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-23 20:06:10.133 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-23 20:06:10.137 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-23 20:06:10.220 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-23 20:06:10.246 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-23 20:06:10.389 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
+2025-01-23 20:13:00.482 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-23 20:13:00.484 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-23 20:13:00.484 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-23 20:13:00.485 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-23 20:13:00.485 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-23 20:13:00.490 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-23 20:13:00.639 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-23 20:13:00.640 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:13:00.641 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-23 20:13:00.642 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-23 20:13:00.643 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-23 20:13:00.710 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:13:00.710 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2025-01-23 20:13:00.710 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-01-23 20:13:00.919 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1921
+2025-01-23 20:13:00.925 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-23 20:13:00.926 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-23 20:13:00.927 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-23 20:13:00.929 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 13)
+2025-01-23 20:13:00.929 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-23 20:13:01.339 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-23 20:13:01.339 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-23 20:13:01.341 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-23 20:13:01.341 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:13:01.341 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:13:01.342 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:13:02.017 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:02.749 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:13:02.749 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:13:02.749 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:13:02.749 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:13:03.023 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:03.936 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:13:03.937 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:13:03.949 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:13:03.950 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:13:03.951 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:13:04.028 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:04.030 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:13:04.824 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.35
+2025-01-23 20:13:05.030 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:05.498 - RealTimeSTT: root - DEBUG - Final text detected with main model: Hello.
+2025-01-23 20:13:05.500 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.55 seconds
+2025-01-23 20:13:05.502 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:13:05.502 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:13:05.508 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:13:06.037 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:07.125 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:08.215 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:09.221 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:10.311 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:11.398 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:12.405 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:13.494 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:14.582 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:15.672 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:13:16.234 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-23 20:13:16.234 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-23 20:13:16.241 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-23 20:13:16.316 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-23 20:13:16.345 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-23 20:13:16.490 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
+2025-01-23 20:14:24.776 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-23 20:14:24.778 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-23 20:14:24.778 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-23 20:14:24.783 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-23 20:14:24.784 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-23 20:14:24.784 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-23 20:14:24.923 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-23 20:14:24.925 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:14:24.927 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-23 20:14:24.928 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-23 20:14:24.929 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-23 20:14:24.992 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:14:24.993 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2025-01-23 20:14:24.993 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-01-23 20:14:25.197 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1921
+2025-01-23 20:14:25.209 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-23 20:14:25.210 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-23 20:14:25.211 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-23 20:14:25.211 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 13)
+2025-01-23 20:14:25.212 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-23 20:14:25.632 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-23 20:14:25.632 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-23 20:14:25.633 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-23 20:14:25.634 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:14:25.634 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:14:25.635 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:14:26.300 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:27.309 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:28.315 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:28.589 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:14:28.589 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:14:28.589 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:14:28.589 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:14:29.402 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:30.410 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:30.594 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:14:30.595 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:14:30.651 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:14:30.652 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:14:30.653 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:14:30.690 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:14:31.497 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:31.498 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-01-23 20:14:32.197 - RealTimeSTT: root - DEBUG - Final text detected with main model: Vice Trump an asshole.
+2025-01-23 20:14:32.199 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 1.55 seconds
+2025-01-23 20:14:32.200 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:14:32.201 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:14:32.202 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:14:32.588 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:33.597 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:34.684 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:35.773 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:36.862 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:37.871 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:14:38.025 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-23 20:14:38.025 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-23 20:14:38.026 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-23 20:14:38.057 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-23 20:14:38.140 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-23 20:14:38.289 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
+2025-01-23 20:17:04.046 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2025-01-23 20:17:04.048 - RealTimeSTT: root - INFO - Initializing faster_whisper main transcription model tiny
+2025-01-23 20:17:04.048 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2025-01-23 20:17:04.054 - RealTimeSTT: urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-01-23 20:17:04.054 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2025-01-23 20:17:04.055 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2025-01-23 20:17:04.350 - RealTimeSTT: root - INFO - Microphone connected and validated (input_device_index: 13)
+2025-01-23 20:17:04.350 - RealTimeSTT: root - DEBUG - Audio recording initialized successfully at 16000 Hz, reading 1024 frames at a time
+2025-01-23 20:17:04.508 - RealTimeSTT: urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/Systran/faster-whisper-tiny/revision/main HTTP/1.1" 200 1921
+2025-01-23 20:17:04.552 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2025-01-23 20:17:04.554 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:17:04.556 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2025-01-23 20:17:04.557 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torch/_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+2025-01-23 20:17:04.558 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2025-01-23 20:17:04.637 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 109, in _find_versionsed_ffmpeg_extension
+    return importlib.import_module(ext)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: libavdevice.so.58: cannot open shared object file: No such file or directory
+2025-01-23 20:17:04.638 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2025-01-23 20:17:04.639 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+  File "/home/mayank/.local/lib/python3.10/site-packages/torio/_extension/utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2025-01-23 20:17:05.048 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2025-01-23 20:17:05.050 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2025-01-23 20:17:05.050 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2025-01-23 20:17:05.098 - RealTimeSTT: root - DEBUG - Faster_whisper main speech to text transcription model initialized successfully
+2025-01-23 20:17:05.098 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2025-01-23 20:17:05.102 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2025-01-23 20:17:05.102 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:17:05.103 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:17:05.107 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:17:05.488 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:06.126 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:17:06.127 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:17:06.127 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:17:06.127 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:17:06.491 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:07.497 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:08.496 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:17:08.497 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:17:08.569 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:17:08.569 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:17:08.570 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:17:08.589 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:08.593 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:17:09.594 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:09.699 - RealTimeSTT: faster_whisper - INFO - Detected language 'en' with probability 0.59
+2025-01-23 20:17:10.683 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:10.892 - RealTimeSTT: root - DEBUG - Final text detected with main model: is Dutch the president of India.
+2025-01-23 20:17:10.895 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 2.32 seconds
+2025-01-23 20:17:10.895 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:17:10.896 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:17:10.899 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:17:11.772 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:12.776 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:13.867 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:14.957 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:15.415 - RealTimeSTT: root - INFO - voice activity detected
+2025-01-23 20:17:15.416 - RealTimeSTT: root - INFO - recording started
+2025-01-23 20:17:15.416 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2025-01-23 20:17:15.416 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2025-01-23 20:17:16.046 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:17.051 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:17.409 - RealTimeSTT: root - INFO - recording stopped
+2025-01-23 20:17:17.410 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2025-01-23 20:17:17.495 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2025-01-23 20:17:17.496 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2025-01-23 20:17:17.497 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2025-01-23 20:17:17.500 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2025-01-23 20:17:18.140 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:18.553 - RealTimeSTT: faster_whisper - INFO - Detected language 'hi' with probability 0.38
+2025-01-23 20:17:19.230 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:19.862 - RealTimeSTT: root - DEBUG - Final text detected with main model: That's what I have here.
+2025-01-23 20:17:19.865 - RealTimeSTT: root - DEBUG - Model tiny completed transcription in 2.37 seconds
+2025-01-23 20:17:19.867 - RealTimeSTT: root - INFO - Setting listen time
+2025-01-23 20:17:19.869 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2025-01-23 20:17:19.870 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2025-01-23 20:17:20.236 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:21.324 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:22.415 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:23.502 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:24.505 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:25.505 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:26.595 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:27.601 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:28.690 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:29.779 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:30.787 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:31.875 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:32.965 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:34.053 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:35.057 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:36.149 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:37.239 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:38.242 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:39.330 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:40.331 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:41.337 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:42.425 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:43.514 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:44.604 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:45.607 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:46.608 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:47.695 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:48.700 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:49.789 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:50.880 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:51.885 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:52.974 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:54.063 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:55.154 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:56.162 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:57.249 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:58.336 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:17:59.342 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:00.433 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:01.522 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:02.610 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:03.616 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:04.707 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:05.795 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:06.803 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:07.889 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:08.978 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:10.068 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:11.073 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:12.163 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:13.253 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:14.261 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:15.347 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:16.436 - RealTimeSTT: root - DEBUG - _audio_data_worker writing audio data into queue.
+2025-01-23 20:18:16.963 - RealTimeSTT: root - INFO - KeyboardInterrupt in wait_audio, shutting down
+2025-01-23 20:18:16.963 - RealTimeSTT: root - DEBUG - Finishing recording thread
+2025-01-23 20:18:16.966 - RealTimeSTT: root - DEBUG - Terminating reader process
+2025-01-23 20:18:16.990 - RealTimeSTT: root - DEBUG - Terminating transcription process
+2025-01-23 20:18:17.019 - RealTimeSTT: root - DEBUG - Finishing realtime thread
+2025-01-23 20:18:17.167 - RealTimeSTT: root - INFO - KeyboardInterrupt in text() method
